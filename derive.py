@@ -1,3 +1,5 @@
+import numpy as np
+
 class derive:
 
   def sevenpoint(f, x, h=0.000855):
