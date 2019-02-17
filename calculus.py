@@ -13,7 +13,7 @@ class derive:
   def richardson(f, x, h=1e-3, N_max=3):
       """
       The Richardson extrapolation algorithm for evaluating the derivative of f(x) at the
-      point x, where ab is specified as (for example) ab=[0,1]. N_max is the maximum number 
+      point x. N_max is the maximum number 
       of iterations for the algorithm.
       """
       R = np.zeros((N_max, N_max))
