@@ -12,9 +12,9 @@ class derive:
 
   def richardson(f, x, h=1e-3, N_max=3):
       """
-      The Richardson extrapolation algorithm for evaluating the derivative of f(x) at the
-      point x. N_max is the maximum number 
-      of iterations for the algorithm.
+      The Richardson extrapolation algorithm for evaluating 
+      the derivative of f(x) at thepoint x. N_max is the 
+      maximum number of iterations for the algorithm.
       """
       R = np.zeros((N_max, N_max))
       R[0,0] = cdd(f, x, h)
